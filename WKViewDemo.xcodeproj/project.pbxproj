@@ -85,6 +85,8 @@
 			dependencies = (
 			);
 			name = WKViewDemo;
+			packageProductDependencies = (
+			);
 			productName = WKViewDemo;
 			productReference = C9E508AF2580DADD00CB6AA6 /* WKViewDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +114,8 @@
 				Base,
 			);
 			mainGroup = C9E508A62580DADD00CB6AA6;
+			packageReferences = (
+			);
 			productRefGroup = C9E508B02580DADD00CB6AA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
