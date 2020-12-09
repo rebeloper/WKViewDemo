@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WKView
 
 struct ContentView: View {
     
@@ -17,6 +18,7 @@ struct ContentView: View {
                 Divider()
                 
                 // 1. Push a WebView with a url
+                NavigationLink("Push WebView", destination: WebView(url: "https://rebeloper.com"))
                 
                 Button(action: {
                     isSheetPresented.toggle()
@@ -25,8 +27,16 @@ struct ContentView: View {
                 }).sheet(isPresented: $isSheetPresented, content: {
                     NavigationView {
                         // 2. Present WebView in a modal with hiding the back button
+//                        WebView(url: "https://rebeloper.com", hidesBackButton: true)
                         
                         // 3. Present a customized WebView in a modal
+                        WebView(url: "https://rebeloper.com",
+                                tintColor: .red,
+                                titleColor: .yellow,
+                                backText: Text("Cancel").italic(),
+                                reloadImage: Image(systemName: "figure.wave"),
+                                goForwardImage: Image(systemName: "forward.frame.fill"),
+                                goBackImage: Image(systemName: "backward.frame.fill"))
                         
                     }
                 })

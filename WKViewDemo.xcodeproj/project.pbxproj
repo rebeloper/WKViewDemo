@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		C9E508B52580DADD00CB6AA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E508B42580DADD00CB6AA6 /* ContentView.swift */; };
 		C9E508B72580DAE000CB6AA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E508B62580DAE000CB6AA6 /* Assets.xcassets */; };
 		C9E508BA2580DAE000CB6AA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E508B92580DAE000CB6AA6 /* Preview Assets.xcassets */; };
+		C9E508D02580F1D600CB6AA6 /* WKView in Frameworks */ = {isa = PBXBuildFile; productRef = C9E508CF2580F1D600CB6AA6 /* WKView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E508D02580F1D600CB6AA6 /* WKView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +88,7 @@
 			);
 			name = WKViewDemo;
 			packageProductDependencies = (
+				C9E508CF2580F1D600CB6AA6 /* WKView */,
 			);
 			productName = WKViewDemo;
 			productReference = C9E508AF2580DADD00CB6AA6 /* WKViewDemo.app */;
@@ -115,6 +118,7 @@
 			);
 			mainGroup = C9E508A62580DADD00CB6AA6;
 			packageReferences = (
+				C9E508CE2580F1D600CB6AA6 /* XCRemoteSwiftPackageReference "WKView" */,
 			);
 			productRefGroup = C9E508B02580DADD00CB6AA6 /* Products */;
 			projectDirPath = "";
@@ -332,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9E508CE2580F1D600CB6AA6 /* XCRemoteSwiftPackageReference "WKView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rebeloper/WKView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9E508CF2580F1D600CB6AA6 /* WKView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9E508CE2580F1D600CB6AA6 /* XCRemoteSwiftPackageReference "WKView" */;
+			productName = WKView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9E508A72580DADD00CB6AA6 /* Project object */;
 }
